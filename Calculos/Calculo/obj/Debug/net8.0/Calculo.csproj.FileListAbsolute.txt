@@ -1,0 +1,14 @@
+C:\Users\42591939888\Desktop\Calculo\bin\Debug\net8.0\Calculo.exe
+C:\Users\42591939888\Desktop\Calculo\bin\Debug\net8.0\Calculo.deps.json
+C:\Users\42591939888\Desktop\Calculo\bin\Debug\net8.0\Calculo.runtimeconfig.json
+C:\Users\42591939888\Desktop\Calculo\bin\Debug\net8.0\Calculo.dll
+C:\Users\42591939888\Desktop\Calculo\bin\Debug\net8.0\Calculo.pdb
+C:\Users\42591939888\Desktop\Calculo\obj\Debug\net8.0\Calculo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\42591939888\Desktop\Calculo\obj\Debug\net8.0\Calculo.AssemblyInfoInputs.cache
+C:\Users\42591939888\Desktop\Calculo\obj\Debug\net8.0\Calculo.AssemblyInfo.cs
+C:\Users\42591939888\Desktop\Calculo\obj\Debug\net8.0\Calculo.csproj.CoreCompileInputs.cache
+C:\Users\42591939888\Desktop\Calculo\obj\Debug\net8.0\Calculo.dll
+C:\Users\42591939888\Desktop\Calculo\obj\Debug\net8.0\refint\Calculo.dll
+C:\Users\42591939888\Desktop\Calculo\obj\Debug\net8.0\Calculo.pdb
+C:\Users\42591939888\Desktop\Calculo\obj\Debug\net8.0\Calculo.genruntimeconfig.cache
+C:\Users\42591939888\Desktop\Calculo\obj\Debug\net8.0\ref\Calculo.dll

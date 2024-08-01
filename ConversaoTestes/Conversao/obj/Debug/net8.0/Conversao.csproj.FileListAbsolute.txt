@@ -1,0 +1,14 @@
+C:\Users\42591939888\Desktop\ConversaoTestes\Conversao\bin\Debug\net8.0\Conversao.exe
+C:\Users\42591939888\Desktop\ConversaoTestes\Conversao\bin\Debug\net8.0\Conversao.deps.json
+C:\Users\42591939888\Desktop\ConversaoTestes\Conversao\bin\Debug\net8.0\Conversao.runtimeconfig.json
+C:\Users\42591939888\Desktop\ConversaoTestes\Conversao\bin\Debug\net8.0\Conversao.dll
+C:\Users\42591939888\Desktop\ConversaoTestes\Conversao\bin\Debug\net8.0\Conversao.pdb
+C:\Users\42591939888\Desktop\ConversaoTestes\Conversao\obj\Debug\net8.0\Conversao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\42591939888\Desktop\ConversaoTestes\Conversao\obj\Debug\net8.0\Conversao.AssemblyInfoInputs.cache
+C:\Users\42591939888\Desktop\ConversaoTestes\Conversao\obj\Debug\net8.0\Conversao.AssemblyInfo.cs
+C:\Users\42591939888\Desktop\ConversaoTestes\Conversao\obj\Debug\net8.0\Conversao.csproj.CoreCompileInputs.cache
+C:\Users\42591939888\Desktop\ConversaoTestes\Conversao\obj\Debug\net8.0\Conversao.dll
+C:\Users\42591939888\Desktop\ConversaoTestes\Conversao\obj\Debug\net8.0\refint\Conversao.dll
+C:\Users\42591939888\Desktop\ConversaoTestes\Conversao\obj\Debug\net8.0\Conversao.pdb
+C:\Users\42591939888\Desktop\ConversaoTestes\Conversao\obj\Debug\net8.0\Conversao.genruntimeconfig.cache
+C:\Users\42591939888\Desktop\ConversaoTestes\Conversao\obj\Debug\net8.0\ref\Conversao.dll
