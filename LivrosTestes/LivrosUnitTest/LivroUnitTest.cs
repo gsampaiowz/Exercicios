@@ -9,7 +9,7 @@ namespace LivrosUnit.Test
             {
             string[] result = Livros.Livro.AdicionarLivro("7 Desafios para ser um rei");
 
-            string[] expectedValue = result;
+            string[] expectedValue = ["7 Desafios para ser um rei"];
 
             Assert.Equal(expectedValue, result);
             }
