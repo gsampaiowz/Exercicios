@@ -1,0 +1,14 @@
+C:\Users\gabri\Desktop\exercicios-logica\ex2\obj\Debug\net8.0\ex2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Desktop\exercicios-logica\ex2\obj\Debug\net8.0\ex2.AssemblyInfoInputs.cache
+C:\Users\gabri\Desktop\exercicios-logica\ex2\obj\Debug\net8.0\ex2.AssemblyInfo.cs
+C:\Users\gabri\Desktop\exercicios-logica\ex2\obj\Debug\net8.0\ex2.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Desktop\exercicios-logica\ex2\bin\Debug\net8.0\ex2.exe
+C:\Users\gabri\Desktop\exercicios-logica\ex2\bin\Debug\net8.0\ex2.deps.json
+C:\Users\gabri\Desktop\exercicios-logica\ex2\bin\Debug\net8.0\ex2.runtimeconfig.json
+C:\Users\gabri\Desktop\exercicios-logica\ex2\bin\Debug\net8.0\ex2.dll
+C:\Users\gabri\Desktop\exercicios-logica\ex2\bin\Debug\net8.0\ex2.pdb
+C:\Users\gabri\Desktop\exercicios-logica\ex2\obj\Debug\net8.0\ex2.dll
+C:\Users\gabri\Desktop\exercicios-logica\ex2\obj\Debug\net8.0\refint\ex2.dll
+C:\Users\gabri\Desktop\exercicios-logica\ex2\obj\Debug\net8.0\ex2.pdb
+C:\Users\gabri\Desktop\exercicios-logica\ex2\obj\Debug\net8.0\ex2.genruntimeconfig.cache
+C:\Users\gabri\Desktop\exercicios-logica\ex2\obj\Debug\net8.0\ref\ex2.dll
