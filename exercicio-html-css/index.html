@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Estruturas Web</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const cards = [
+            {
+              img: "",
+              title: "Angra dos reis",
+              subtitle:
+                "Desfrute de um paraíso tropical em nossa pousada! Relaxe em nossas piscinas com vista para o mar.",
+            },
+            {
+              img: "",
+              title: "Angra dos reis",
+              subtitle:
+                "Desfrute de um paraíso tropical em nossa pousada! Relaxe em nossas piscinas com vista para o mar.",
+            },
+            {
+              img: "",
+              title: "Angra dos reis",
+              subtitle:
+                "Desfrute de um paraíso tropical em nossa pousada! Relaxe em nossas piscinas com vista para o mar.",
+            },
+            // Outros objetos card aqui...
+          ];
+        
+          const container = document.getElementById('cards-container');
+          cards.forEach(card => {
+            const div = document.createElement('div');
+            div.innerHTML = `
+              <img src="${card.img}" alt="${card.title}">
+              <h2>${card.title}</h2>
+              <h3>${card.subtitle}</h3>
+            `;
+            container.appendChild(div);
+          });
+        });
+        </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-flex">
+        <h1 class="header--title">Hospedagens.com</h1>
+        <nav class="header--nav">
+          <a href="#">Hotéis</a>
+          <a href="#">Contato</a>
+          <a href="#">Entrar</a>
+          <a class="header--nav--cadastrar">Cadastrar-se</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="home">
+        <div class="container">
+          <div class="home--texts">
+            <h1 class="home--title">As melhores hospedagens do Brasil</h1>
+            <h2 class="home--subtitle">
+              mais de 500 mil reservas esperando por você! Basta procurar pelo
+              local ideal, e realizar a viagem dos seus sonhos
+            </h2>
+          </div>
+          <figure>
+            <img class="home--img" src="" alt="" />
+          </figure>
+        </div>
+      </section>
+      <article class="article--container">
+        <input placeholder="icon Qual o local desejado?" />
+        <input placeholder="icon Data check-in" />
+        <input placeholder="icon Data check-out" />
+
+        <button>Procurar hotel</button>
+      </article>
+      <section class="cards-section">
+        <div class="container">
+          <div id="cards-container" class="cards">
+
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
