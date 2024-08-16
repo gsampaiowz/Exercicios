@@ -73,13 +73,14 @@
           const div = document.createElement("div");
           div.classList.add("card");
           div.innerHTML = `
-              <img src="${card.img}" width="260px" height="160px" alt="${card.title}">
+              <div class="card--img" style="background-image: url(${card.img}) ; width: 260px; height: 160px"></div>
               <div class="card--titles">
-              <h2>${card.title}</h2>
-              <h3>${card.uf}</h3>
+              <h4>${card.title}</h4>
+              <h4>${card.uf}</h4>
               </div>
-              <h4>${card.subtitle}</h4>
+              <p>${card.subtitle}</p>
             `;
+
           container.appendChild(div);
         });
       });
@@ -89,13 +90,20 @@
   <body>
     <header class="header">
       <div class="header-flex">
-        <h1 class="header--title">Hospedagens.com</h1>
+        <img src="./assets/img/logo-branca.png" alt="" />
         <nav class="header--nav">
           <a href="#">Hotéis</a>
           <a href="#">Contato</a>
           <a href="#">Entrar</a>
           <a class="header--nav--cadastrar">Cadastrar-se</a>
         </nav>
+        <img
+          id="menu-hamburger"
+          src="./assets/icons/menu.png"
+          width="36px"
+          height="30px"
+          alt=""
+        />
       </div>
     </header>
     <main>
@@ -110,22 +118,41 @@
           </div>
           <figure>
             <img
-              style="object-fit: cover; filter: brightness(999)"
               width="380px"
               height="330px"
-              src="./assets/img/mapa.png"
+              src="./assets/img/mapa-brasil.png"
               alt=""
             />
           </figure>
         </div>
       </section>
-      <article class="article--container">
-        <input placeholder="icon Qual o local desejado?" />
-        <input placeholder="icon Data check-in" />
-        <input placeholder="icon Data check-out" />
+      <section class="forms-section">
+        <forms class="forms--container">
+          <input
+            type="text"
+            style="
+              background: url(./assets/icons/local-icon.svg) no-repeat left;
+            "
+            placeholder="Qual o local desejado?"
+          />
+          <input
+            type="text"
+            style="
+              background: url(./assets/icons/checkin-icon.svg) no-repeat left;
+            "
+            placeholder="Data check-in"
+          />
+          <input
+            type="text"
+            style="
+              background: url(./assets/icons/checkout-icon.svg) no-repeat left;
+            "
+            placeholder="Data check-out"
+          />
 
-        <button>Procurar hotel</button>
-      </article>
+          <button type="submit">Procurar hotel</button>
+        </forms>
+      </section>
       <section class="cards-section">
         <div class="container">
           <div id="cards-container"></div>
@@ -134,7 +161,7 @@
       <section class="last-section">
         <div class="container">
           <div class="last--texts">
-            <h1 >
+            <h1>
               Venha conferir os melhores
               <span style="color: #002777">hoteis</span> com as melhores
               <span style="color: #019438">promoções</span> do país
@@ -147,7 +174,7 @@
           </div>
           <figure>
             <img
-              src="./assets/img/last.jpg"
+              src="./assets/img/travel.png"
               width="450px"
               height="380px"
               alt=""
@@ -158,13 +185,40 @@
     </main>
     <footer class="footer">
       <div class="first-footer">
-        <h1>Fale com um de nossos acessores</h1>
-        <h3>hospedagens@contato.com.br</h3>
-        <h3>(11) 0800-707-0707</h3>
+        <!-- * CIRCULOS -->
+        <!-- esquerda -->
+        <div style="width: 100px; height: 100px; left: 20vw; top: 0;" class="circle"></div>
+        <div style="width: 50px; height: 50px; left: 12vw; bottom: 0;" class="circle"></div>
+        <div style="width: 60px; height: 60px; left: 9.5vw; bottom: 8px;" class="circle"></div>
+        <div style="width: 100px; height: 100px; left: -50px; top: 30%; opacity: 0.5;" class="circle"></div>
+
+        <!-- direita -->
+        <div style="width: 100px; height: 100px; right: 20vw; top: 0;" class="circle"></div>
+        <div style="width: 50px; height: 50px; right: 12vw; bottom: 0;" class="circle"></div>
+        <div style="width: 60px; height: 60px; right: 9.5vw; bottom: 8px;" class="circle"></div>
+        <div style="width: 100px; height: 100px; right: -50px; top: 30%; opacity: 0.5;" class="circle"></div>
+        
+        <h2>Fale com um de nossos acessores</h2>
+        <h4>hospedagens@contato.com.br</h4>
+        <h4>(11) 0800-707-0707</h4>
       </div>
       <div class="second-footer">
-        <h2>Hospedagens.com</h2>
+        <img src="./assets/img/logo-preta.png" alt="" />
       </div>
     </footer>
   </body>
+
+  <script>
+    // menu mobile
+    document
+      .getElementById("menu-hamburger")
+      .addEventListener("click", function () {
+        const nav = document.querySelector(".header--nav");
+        if (nav.classList.contains("header--nav-active")) {
+          nav.classList.remove("header--nav-active");
+        } else {
+          nav.classList.add("header--nav-active");
+        }
+      });
+  </script>
 </html>
