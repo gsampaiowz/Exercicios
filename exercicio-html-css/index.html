@@ -6,42 +6,86 @@
     <link rel="stylesheet" href="style.css" />
     <title>Estruturas Web</title>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          const cards = [
-            {
-              img: "",
-              title: "Angra dos reis",
-              subtitle:
-                "Desfrute de um paraíso tropical em nossa pousada! Relaxe em nossas piscinas com vista para o mar.",
-            },
-            {
-              img: "",
-              title: "Angra dos reis",
-              subtitle:
-                "Desfrute de um paraíso tropical em nossa pousada! Relaxe em nossas piscinas com vista para o mar.",
-            },
-            {
-              img: "",
-              title: "Angra dos reis",
-              subtitle:
-                "Desfrute de um paraíso tropical em nossa pousada! Relaxe em nossas piscinas com vista para o mar.",
-            },
-            // Outros objetos card aqui...
-          ];
-        
-          const container = document.getElementById('cards-container');
-          cards.forEach(card => {
-            const div = document.createElement('div');
-            div.innerHTML = `
-              <img src="${card.img}" alt="${card.title}">
+      // mapeamento dos cards
+      document.addEventListener("DOMContentLoaded", function () {
+        const cards = [
+          {
+            img: "./assets/img/foto1.jpg",
+            title: "Angra dos reis",
+            subtitle:
+              "Desfrute de um paraíso tropical em nossa pousada! Relaxe em nossas piscinas com vista para o mar.",
+            uf: "RJ",
+          },
+          {
+            img: "./assets/img/foto1.jpg",
+            title: "Arraial do cabo",
+            subtitle:
+              "Conecte-se com a natureza em Arraial do Cabo! Nossa pousada está localizada próximo às praias.",
+            uf: "RJ",
+          },
+          {
+            img: "./assets/img/foto1.jpg",
+            title: "Treze Tílias",
+            subtitle:
+              "Viva a experiência de um vilarejo europeu no Brasil! Nossa pousada em Treze Tílias é perfeita.",
+            uf: "SC",
+          },
+          {
+            img: "./assets/img/foto1.jpg",
+            title: "Ipanema",
+            subtitle:
+              "Explore a rica cultura e história de Ipanema! Nossa pousada é o ponto de partida ideal para conhecer.",
+            uf: "RJ",
+          },
+          {
+            img: "./assets/img/foto1.jpg",
+            title: "Angra dos reis",
+            subtitle:
+              "Desfrute de um paraíso tropical em nossa pousada! Relaxe em nossas piscinas com vista para o mar.",
+            uf: "RJ",
+          },
+          {
+            img: "./assets/img/foto1.jpg",
+            title: "Arraial do cabo",
+            subtitle:
+              "Conecte-se com a natureza em Arraial do Cabo! Nossa pousada está localizada próximo às praias.",
+            uf: "RJ",
+          },
+          {
+            img: "./assets/img/foto1.jpg",
+            title: "Treze Tílias",
+            subtitle:
+              "Viva a experiência de um vilarejo europeu no Brasil! Nossa pousada em Treze Tílias é perfeita.",
+            uf: "SC",
+          },
+          {
+            img: "./assets/img/foto1.jpg",
+            title: "Ipanema",
+            subtitle:
+              "Explore a rica cultura e história de Ipanema! Nossa pousada é o ponto de partida ideal para conhecer.",
+            uf: "RJ",
+          },
+        ];
+
+        const container = document.getElementById("cards-container");
+
+        cards.forEach((card) => {
+          const div = document.createElement("div");
+          div.classList.add("card");
+          div.innerHTML = `
+              <img src="${card.img}" width="260px" height="160px" alt="${card.title}">
+              <div class="card--titles">
               <h2>${card.title}</h2>
-              <h3>${card.subtitle}</h3>
+              <h3>${card.uf}</h3>
+              </div>
+              <h4>${card.subtitle}</h4>
             `;
-            container.appendChild(div);
-          });
+          container.appendChild(div);
         });
-        </script>
+      });
+    </script>
   </head>
+  <!-- body -->
   <body>
     <header class="header">
       <div class="header-flex">
@@ -58,14 +102,20 @@
       <section class="home">
         <div class="container">
           <div class="home--texts">
-            <h1 class="home--title">As melhores hospedagens do Brasil</h1>
-            <h2 class="home--subtitle">
+            <h1>As melhores hospedagens do Brasil</h1>
+            <h2>
               mais de 500 mil reservas esperando por você! Basta procurar pelo
               local ideal, e realizar a viagem dos seus sonhos
             </h2>
           </div>
           <figure>
-            <img class="home--img" src="" alt="" />
+            <img
+              style="object-fit: cover; filter: brightness(999)"
+              width="380px"
+              height="330px"
+              src="./assets/img/mapa.png"
+              alt=""
+            />
           </figure>
         </div>
       </section>
@@ -78,11 +128,43 @@
       </article>
       <section class="cards-section">
         <div class="container">
-          <div id="cards-container" class="cards">
-
+          <div id="cards-container"></div>
+        </div>
+      </section>
+      <section class="last-section">
+        <div class="container">
+          <div class="last--texts">
+            <h1 >
+              Venha conferir os melhores
+              <span style="color: #002777">hoteis</span> com as melhores
+              <span style="color: #019438">promoções</span> do país
+            </h1>
+            <h2>
+              <span style="color: #019438">Não perca tempo</span> e venha
+              conferir o que há de <span style="color: #ffdf00">melhor</span> na
+              hotelagem brasileira
+            </h2>
           </div>
+          <figure>
+            <img
+              src="./assets/img/last.jpg"
+              width="450px"
+              height="380px"
+              alt=""
+            />
+          </figure>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="first-footer">
+        <h1>Fale com um de nossos acessores</h1>
+        <h3>hospedagens@contato.com.br</h3>
+        <h3>(11) 0800-707-0707</h3>
+      </div>
+      <div class="second-footer">
+        <h2>Hospedagens.com</h2>
+      </div>
+    </footer>
   </body>
 </html>
